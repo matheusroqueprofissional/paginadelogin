@@ -1,0 +1,278 @@
+body{
+    background-color:rgb(111, 251, 120);
+    background-repeat: no-repeat;
+    height: 97.7vh;
+    transition: 2s;
+
+}
+
+
+.dark-mode {
+    transition: 2s;
+    background-color: black;
+    color: white;
+  }
+
+.dark-mode, .dark-mode h1, .dark-mode h2 {
+    color: rgb(28, 63, 30);
+    transition: 2s;
+}  
+.dark-mode .box-login{
+    background-color: rgba(45, 41, 41, 0.508);
+    transition: 2s;
+}
+
+.dark-mode .form{
+    background-color: rgba(0, 0, 0, 0.262);
+    transition: 2s;
+}
+
+
+p{
+    color: rgb(111, 251, 120);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700,medium;
+}
+
+h1,h2{
+    font-weight: 700,medium;
+    color: rgb(111, 251, 120);
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.box-login{
+    top: 80px;
+    right: 10px;
+    background-color: rgb(9, 9, 71);
+    position: relative;
+    width:  100vh;
+    height: 65vh;
+    border-radius: 25px;
+    border: solid 10px #000000;
+}
+.title-login,.subtitle-login{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    left: 50px;
+}
+.form{
+    border: solid #ffffff 7px;
+    background-color: rgba(128, 126, 126, 0.887);
+    position: relative;
+    width: 270px;
+    left: 400px;
+    height: 350px;
+    bottom:380px;
+    border-radius: 30px;
+}
+
+.formulario{
+    height: 200px;
+}
+
+.login-form{
+    top: 30px;
+    position: relative;
+    left: 90px;
+    color:rgb(111, 251, 120);
+}
+.usuario,.senha,.botao-text
+{
+    top: 30px;
+    position:relative;
+    left: 30px;
+}
+
+.botao-text{
+    background-color: rgba(86, 82, 82, 0.467);
+    border-radius: 10px;
+    height: 39px;
+    width: 220px;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.botao-text::placeholder{
+    background-color:red;
+    color: red;
+}
+
+.botao{
+    
+    color: white;
+    background-color:rgb(104, 235, 113) ;
+    border-radius: 10px;
+    width: 223px;
+    height: 33px;
+    position: relative;
+    top: 45px;
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    justify-content: center;
+    text-align-last: center;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 900,medium;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(46, 106, 50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-astronaut{
+    
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+
+
+/*power button*/
+
+.power-button{
+    width: 7.8rem;
+    height: 3rem;
+    background-color: #DEDEDE;
+    border-radius: 32px;
+    position: relative;
+    left: 200px;
+    top: 400px;
+}
+
+#powerbutton{
+    display: none;
+}
+
+.toggle{
+    width: 5rem;
+    height: 3rem;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:1;
+    background-color: #fcfff4;
+    border: 1px solid #DEDEDE;
+    border-radius: 32px;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: .3s cubic-bezier(0.895, 0.07, 0.685, 0.68);
+}
+
+.toggle::before{
+    content: 'LIGHT';
+    color: #ffffff;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0;
+    top: 14px;
+    left: 12px;
+}
+
+.toggle::after{
+    content: 'DARK';
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 14px;
+    top: 14px;
+    left: 10px;
+}
+
+
+#powerbutton:checked + .toggle{
+    left: 3.7rem;
+    background-color: #00a0a0;
+}
+
+#powerbutton:checked + .toggle::after{
+    font-size: 0;
+}
+
+#powerbutton:checked + .toggle::before{
+    font-size: 14px;
+}
+
+#powerbutton:checked + .body{
+    background-color: red;
+}
+
+
+.botao-darkmode{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+   position: relative;
+   left: 500px;
+   width: 300px;
+   top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
